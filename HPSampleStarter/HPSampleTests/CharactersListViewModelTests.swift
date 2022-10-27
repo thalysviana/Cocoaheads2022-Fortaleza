@@ -15,7 +15,6 @@ final class CharactersListViewModelTests: XCTestCase {
         // TODO: - Create spy to inject into the ViewModel using Sourcery
         
         // Given
-        // let sut = CharacterListViewModel()
         
         // When
         

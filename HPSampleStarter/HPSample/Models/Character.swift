@@ -6,7 +6,6 @@
 import Foundation
 
 // MARK: - Character
-// sourcery: AutoFixturable
 struct Character: Codable {
     let name: String
     let species: String
