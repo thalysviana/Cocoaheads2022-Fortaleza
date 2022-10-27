@@ -12,7 +12,7 @@ import XCTest
 
 final class CharactersListViewModelTests: XCTestCase {
     func testFetchCharacters_WhenServiveResponseDidSucceed() {
-        // TODO: - Create spy to inject into the ViewModel
+        // TODO: - Create spy to inject into the ViewModel using Sourcery
         
         // Given
         // let sut = CharacterListViewModel()
