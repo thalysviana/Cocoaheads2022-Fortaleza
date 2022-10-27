@@ -8,6 +8,12 @@
 import Foundation
 
 struct CharacterViewModel: Identifiable {
+    private let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        return formatter
+    }()
+    
     let id: UUID = .init()
     
     var name: String {
@@ -23,7 +29,12 @@ struct CharacterViewModel: Identifiable {
     }
     
     var dateOfBirth: String {
-        character.dateOfBirth.isEmpty ? "-" : character.dateOfBirth
+        guard !character.dateOfBirth.isEmpty,
+              let date = dateFormatter.date(from: character.dateOfBirth)
+        else {
+            return "-"
+        }
+        return dateFormatter.string(from: date)
     }
     
     var isWizard: String {

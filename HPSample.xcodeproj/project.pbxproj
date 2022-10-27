@@ -11,7 +11,6 @@
 		77426E64290A59D8009BC0CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E63290A59D8009BC0CA /* ContentView.swift */; };
 		77426E66290A59DA009BC0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77426E65290A59DA009BC0CA /* Assets.xcassets */; };
 		77426E69290A59DA009BC0CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77426E68290A59DA009BC0CA /* Preview Assets.xcassets */; };
-		77426E73290A59DA009BC0CA /* HPSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E72290A59DA009BC0CA /* HPSampleTests.swift */; };
 		77426E7D290A59DA009BC0CA /* HPSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E7C290A59DA009BC0CA /* HPSampleUITests.swift */; };
 		77426E7F290A59DA009BC0CA /* HPSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E7E290A59DA009BC0CA /* HPSampleUITestsLaunchTests.swift */; };
 		77426E8D290A5A13009BC0CA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E8C290A5A13009BC0CA /* NetworkService.swift */; };
@@ -21,6 +20,7 @@
 		77426E97290A5B3D009BC0CA /* HPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E96290A5B3D009BC0CA /* HPService.swift */; };
 		77426E99290A648B009BC0CA /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E98290A648B009BC0CA /* CharacterViewModel.swift */; };
 		77426E9E290A68BC009BC0CA /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E9D290A68BC009BC0CA /* CharacterDetails.swift */; };
+		77E147B2290A7C6700DD64EC /* CharactersListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E147B1290A7C6700DD64EC /* CharactersListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		77426E65290A59DA009BC0CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77426E68290A59DA009BC0CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		77426E6E290A59DA009BC0CA /* HPSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		77426E72290A59DA009BC0CA /* HPSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPSampleTests.swift; sourceTree = "<group>"; };
 		77426E78290A59DA009BC0CA /* HPSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77426E7C290A59DA009BC0CA /* HPSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPSampleUITests.swift; sourceTree = "<group>"; };
 		77426E7E290A59DA009BC0CA /* HPSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -58,6 +57,8 @@
 		77426E96290A5B3D009BC0CA /* HPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPService.swift; sourceTree = "<group>"; };
 		77426E98290A648B009BC0CA /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		77426E9D290A68BC009BC0CA /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
+		77E147AE290A7B9500DD64EC /* HPSampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPSampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		77E147B1290A7C6700DD64EC /* CharactersListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +132,8 @@
 		77426E71290A59DA009BC0CA /* HPSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				77426E72290A59DA009BC0CA /* HPSampleTests.swift */,
+				77E147AE290A7B9500DD64EC /* HPSampleTests-Bridging-Header.h */,
+				77E147B1290A7C6700DD64EC /* CharactersListViewModelTests.swift */,
 			);
 			path = HPSampleTests;
 			sourceTree = "<group>";
@@ -251,6 +253,7 @@
 					};
 					77426E6D290A59DA009BC0CA = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 						TestTargetID = 77426E5D290A59D8009BC0CA;
 					};
 					77426E77290A59DA009BC0CA = {
@@ -326,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77426E73290A59DA009BC0CA /* HPSampleTests.swift in Sources */,
+				77E147B2290A7C6700DD64EC /* CharactersListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,15 +535,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZB4G8WR697;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoaheads-2022.HPSampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "HPSampleTests/HPSampleTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HPSample";
@@ -552,15 +563,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZB4G8WR697;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoaheads-2022.HPSampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "HPSampleTests/HPSampleTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HPSample";
