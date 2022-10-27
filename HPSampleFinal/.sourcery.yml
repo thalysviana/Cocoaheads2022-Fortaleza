@@ -6,7 +6,7 @@ templates:
   - ./Templates/AutoFixturable.stencil
   - ./Templates/AutoEquatable.stencil
 output:
-  path: HPSampleTests/Sourcery
+  path: HPSampleTests/Generated
   link:
     project: ./HPSample.xcodeproj
     target: HPSampleTests
