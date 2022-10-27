@@ -5,12 +5,13 @@
 
 import Foundation
 
-// MARK: - WelcomeElement
-struct Character: Codable {
+// MARK: - Character
+struct Character: Codable, Identifiable {
+    let id = UUID()
     let name: String
     let alternateNames: [JSONAny]
     let species, gender, house, dateOfBirth: String
-    let yearOfBirth: Int
+    let yearOfBirth: Int?
     let wizard: Bool
     let ancestry, eyeColour, hairColour: String
     let wand: Wand
@@ -33,7 +34,6 @@ struct Character: Codable {
 // MARK: - Wand
 struct Wand: Codable {
     let wood, core: String
-    let length: Int
 }
 
 typealias Characters = [Character]
