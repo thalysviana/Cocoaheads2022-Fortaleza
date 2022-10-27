@@ -1,7 +1,7 @@
 # Cocoaheads2022-Fortaleza
 
 ## Description 🧐
-In this project we're going to help Hogwarts' students in unit testing an iOS app. This app contains information about characters
+In this project we're going to help Hogwarts' students in unit testing an iOS app (Dev 🤝 Wizards). This app contains information about characters
 from the Harry Potter saga, but there's one caveat, we must use ~magic~ [Sourcery](https://github.com/krzysztofzablocki/Sourcery) to build it 🪄
 
 ![Some sourcery](https://media.giphy.com/media/BJmTtZL4hova8/giphy.gif)
