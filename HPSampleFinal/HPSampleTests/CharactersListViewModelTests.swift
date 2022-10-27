@@ -11,7 +11,7 @@ import XCTest
 @testable import HPSample
 
 final class CharactersListViewModelTests: XCTestCase {
-    func testFetchCharacters_WhenServiveResponseDidSucceed() {
+    func testFetchCharacters_WhenServiveResponseDidSucceed() async {
         // TODO: - Create spy to inject into the ViewModel using Sourcery
         
         // Given
