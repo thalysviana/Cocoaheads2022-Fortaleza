@@ -1,0 +1,40 @@
+//
+//  CharacterListView.swift
+//  HPSample
+//
+//  Created by Thalys Viana on 27/10/22.
+//
+
+import SwiftUI
+
+struct CharacterListView: View {
+    @ObservedObject var viewModel: CharacterListViewModel
+    
+    var body: some View {
+        NavigationView {
+            List {
+                if viewModel.characters.isEmpty {
+                    ProgressView()
+                } else {
+                    ForEach(viewModel.characters) { character in
+                        HStack(spacing: 16) {
+                            CharacterItem(viewModel: character)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Characters 🪄")
+            .onAppear {
+                Task {
+                    await viewModel.fetchCharacters()
+                }
+            }
+        }
+    }
+}
+
+struct CharacterListView_Previews: PreviewProvider {
+    static var previews: some View {
+        CharacterListView(viewModel: .init())
+    }
+}
