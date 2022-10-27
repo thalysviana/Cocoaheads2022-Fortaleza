@@ -1,0 +1,15 @@
+sources:
+  - HPSample
+  - HPSampleTests
+templates:
+  - ./Templates/AutoMockable.stencil
+  - ./Templates/AutoFixturable.stencil
+output:
+  path: HPSampleTests/Sourcery
+  link:
+    project: ./HPSample.xcodeproj
+    target: HPSampleTests
+    group: HPSampleTests/Generated
+args:
+  testableImport: "HPSample" # [MANDATORY] Your mocks will have "@testable import <testableImport>"
+  containedPathSubstringToApplyTemplate: "/HPSample/" 
