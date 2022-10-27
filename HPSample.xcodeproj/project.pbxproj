@@ -20,7 +20,8 @@
 		77426E97290A5B3D009BC0CA /* HPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E96290A5B3D009BC0CA /* HPService.swift */; };
 		77426E99290A648B009BC0CA /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E98290A648B009BC0CA /* CharacterViewModel.swift */; };
 		77426E9E290A68BC009BC0CA /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E9D290A68BC009BC0CA /* CharacterDetails.swift */; };
-		77E147B2290A7C6700DD64EC /* CharactersListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E147B1290A7C6700DD64EC /* CharactersListViewModelTests.swift */; };
+		77E147C3290A8C9D00DD64EC /* CharactersListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E147C1290A8C9D00DD64EC /* CharactersListViewModelTests.swift */; };
+		77E147CD290A947D00DD64EC /* FixturableValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E147CC290A947D00DD64EC /* FixturableValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,9 @@
 		77426E96290A5B3D009BC0CA /* HPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPService.swift; sourceTree = "<group>"; };
 		77426E98290A648B009BC0CA /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		77426E9D290A68BC009BC0CA /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
-		77E147AE290A7B9500DD64EC /* HPSampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPSampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		77E147B1290A7C6700DD64EC /* CharactersListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModelTests.swift; sourceTree = "<group>"; };
+		77E147C1290A8C9D00DD64EC /* CharactersListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListViewModelTests.swift; sourceTree = "<group>"; };
+		77E147C2290A8C9D00DD64EC /* HPSampleTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HPSampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		77E147CC290A947D00DD64EC /* FixturableValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturableValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +134,9 @@
 		77426E71290A59DA009BC0CA /* HPSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				77E147AE290A7B9500DD64EC /* HPSampleTests-Bridging-Header.h */,
-				77E147B1290A7C6700DD64EC /* CharactersListViewModelTests.swift */,
+				77E147C1290A8C9D00DD64EC /* CharactersListViewModelTests.swift */,
+				77E147C2290A8C9D00DD64EC /* HPSampleTests-Bridging-Header.h */,
+				77E147CC290A947D00DD64EC /* FixturableValues.swift */,
 			);
 			path = HPSampleTests;
 			sourceTree = "<group>";
@@ -329,7 +332,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77E147B2290A7C6700DD64EC /* CharactersListViewModelTests.swift in Sources */,
+				77E147C3290A8C9D00DD64EC /* CharactersListViewModelTests.swift in Sources */,
+				77E147CD290A947D00DD64EC /* FixturableValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

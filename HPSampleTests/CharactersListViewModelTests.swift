@@ -22,3 +22,5 @@ final class CharactersListViewModelTests: XCTestCase {
         // Then
     }
 }
+
+
