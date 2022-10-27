@@ -7,14 +7,9 @@
 
 import Foundation
 
+// sourcery: AutoFixturable
 struct CharacterViewModel: Identifiable {
-    private let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
-        return formatter
-    }()
-    
-    let id: UUID = .init()
+    let id: UUID
     
     var name: String {
         character.name
@@ -29,21 +24,18 @@ struct CharacterViewModel: Identifiable {
     }
     
     var dateOfBirth: String {
-        guard !character.dateOfBirth.isEmpty,
-              let date = dateFormatter.date(from: character.dateOfBirth)
-        else {
-            return "-"
-        }
-        return dateFormatter.string(from: date)
+        character.dateOfBirth.isEmpty ? "-" : character.dateOfBirth
     }
     
     var isWizard: String {
         character.wizard ? "Yes, sorcery is my passion 🧙‍♂️" : "No 😔"
     }
     
+    // sourcery: example = ".fixture()"
     private let character: Character
     
-    init(character: Character) {
+    init(id: UUID = .init(), character: Character) {
+        self.id = id
         self.character = character
     }
 }
