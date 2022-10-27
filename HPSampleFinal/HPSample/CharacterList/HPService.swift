@@ -7,6 +7,7 @@
 
 import Foundation
 
+// sourcery: AutoMockable
 protocol HPServiceProtocol {
     func fetchCharacters() async -> Characters
 }

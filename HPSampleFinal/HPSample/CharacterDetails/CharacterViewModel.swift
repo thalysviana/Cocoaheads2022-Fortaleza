@@ -8,8 +8,16 @@
 import Foundation
 
 // sourcery: AutoFixturable
-struct CharacterViewModel: Identifiable {
-    let id: UUID
+// sourcery: AutoEquatable
+struct CharacterViewModel {
+    private let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        return formatter
+    }()
+
+    // sourcery: example = ".fixture()"
+    let character: Character
     
     var name: String {
         character.name
@@ -24,18 +32,18 @@ struct CharacterViewModel: Identifiable {
     }
     
     var dateOfBirth: String {
-        character.dateOfBirth.isEmpty ? "-" : character.dateOfBirth
+        guard !character.dateOfBirth.isEmpty,
+              let date = dateFormatter.date(from: character.dateOfBirth) else {
+            return "-"
+        }
+        return dateFormatter.string(from: date)
     }
     
     var isWizard: String {
         character.wizard ? "Yes, sorcery is my passion 🧙‍♂️" : "No 😔"
     }
     
-    // sourcery: example = ".fixture()"
-    private let character: Character
-    
-    init(id: UUID = .init(), character: Character) {
-        self.id = id
+    init(character: Character) {
         self.character = character
     }
 }

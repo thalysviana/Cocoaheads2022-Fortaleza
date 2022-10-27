@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16751F9D00BF3BDC92D3A078 /* CharacterFixtures.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971E4C7D4C4BE6E55D743EC /* CharacterFixtures.generated.swift */; };
+		20EB594FBB60E83AD8E63564 /* CharacterViewModelFixtures.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A574940E7F70DA96FACB2B /* CharacterViewModelFixtures.generated.swift */; };
 		77426E62290A59D8009BC0CA /* HPSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E61290A59D8009BC0CA /* HPSampleApp.swift */; };
 		77426E64290A59D8009BC0CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E63290A59D8009BC0CA /* ContentView.swift */; };
 		77426E66290A59DA009BC0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77426E65290A59DA009BC0CA /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		77426E9E290A68BC009BC0CA /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E9D290A68BC009BC0CA /* CharacterDetails.swift */; };
 		77E147C3290A8C9D00DD64EC /* CharactersListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E147C1290A8C9D00DD64EC /* CharactersListViewModelTests.swift */; };
 		77E147CD290A947D00DD64EC /* FixturableValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E147CC290A947D00DD64EC /* FixturableValues.swift */; };
+		B26073F3EF6BA4DD20BB47D7 /* HPServiceProtocolSpy.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E62B590D3E6F57E63D58392 /* HPServiceProtocolSpy.generated.swift */; };
+		CF85C0A4FC6B3F6A1B16C143 /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEA888C9AF2881FEC1800C /* AutoEquatable.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AEEA888C9AF2881FEC1800C /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = AutoEquatable.generated.swift; path = ../Sourcery/AutoEquatable.generated.swift; sourceTree = "<group>"; };
+		2E62B590D3E6F57E63D58392 /* HPServiceProtocolSpy.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = HPServiceProtocolSpy.generated.swift; path = ../Sourcery/HPServiceProtocolSpy.generated.swift; sourceTree = "<group>"; };
 		77426E5E290A59D8009BC0CA /* HPSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HPSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77426E61290A59D8009BC0CA /* HPSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPSampleApp.swift; sourceTree = "<group>"; };
 		77426E63290A59D8009BC0CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 		77E147C1290A8C9D00DD64EC /* CharactersListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListViewModelTests.swift; sourceTree = "<group>"; };
 		77E147C2290A8C9D00DD64EC /* HPSampleTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HPSampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		77E147CC290A947D00DD64EC /* FixturableValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturableValues.swift; sourceTree = "<group>"; };
+		A2A574940E7F70DA96FACB2B /* CharacterViewModelFixtures.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = CharacterViewModelFixtures.generated.swift; path = ../Sourcery/CharacterViewModelFixtures.generated.swift; sourceTree = "<group>"; };
+		E971E4C7D4C4BE6E55D743EC /* CharacterFixtures.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = CharacterFixtures.generated.swift; path = ../Sourcery/CharacterFixtures.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,7 @@
 				77E147C1290A8C9D00DD64EC /* CharactersListViewModelTests.swift */,
 				77E147C2290A8C9D00DD64EC /* HPSampleTests-Bridging-Header.h */,
 				77E147CC290A947D00DD64EC /* FixturableValues.swift */,
+				79419960B0EA22DA1D8B83B3 /* Generated */,
 			);
 			path = HPSampleTests;
 			sourceTree = "<group>";
@@ -183,6 +192,17 @@
 				77426E98290A648B009BC0CA /* CharacterViewModel.swift */,
 			);
 			path = CharacterDetails;
+			sourceTree = "<group>";
+		};
+		79419960B0EA22DA1D8B83B3 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				2E62B590D3E6F57E63D58392 /* HPServiceProtocolSpy.generated.swift */,
+				A2A574940E7F70DA96FACB2B /* CharacterViewModelFixtures.generated.swift */,
+				E971E4C7D4C4BE6E55D743EC /* CharacterFixtures.generated.swift */,
+				0AEEA888C9AF2881FEC1800C /* AutoEquatable.generated.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +354,10 @@
 			files = (
 				77E147C3290A8C9D00DD64EC /* CharactersListViewModelTests.swift in Sources */,
 				77E147CD290A947D00DD64EC /* FixturableValues.swift in Sources */,
+				B26073F3EF6BA4DD20BB47D7 /* HPServiceProtocolSpy.generated.swift in Sources */,
+				20EB594FBB60E83AD8E63564 /* CharacterViewModelFixtures.generated.swift in Sources */,
+				16751F9D00BF3BDC92D3A078 /* CharacterFixtures.generated.swift in Sources */,
+				CF85C0A4FC6B3F6A1B16C143 /* AutoEquatable.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,7 @@
 import Foundation
 
 // MARK: - Character
+// sourcery: AutoEquatable
 // sourcery: AutoFixturable
 struct Character: Codable {
     let name: String

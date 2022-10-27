@@ -1,5 +1,5 @@
 {% macro fixtureParams type %}
-{% for variable in type.allVariables where not variable.isComputed %}
+{% for variable in type.allVariables where not variable.isComputed and variable.readAccess != "private" %}
         {{variable.name}}: {{variable.typeName}} = {% call paramValue variable %}{% if not forloop.last %},{% endif %}
 {% endfor %}
 {% endmacro %}
@@ -27,7 +27,7 @@ extension {{type.name}} {
         {% call fixtureParams type %}
     ) -> {{type.name}} {
         return .init(
-            {% for variable in type.allVariables where not variable.isComputed %}
+            {% for variable in type.allVariables where not variable.isComputed and variable.readAccess != "private" %}
             {{variable.name}}: {{variable.name}}{% if not forloop.last %},{% endif %}
             {% endfor %}
         )

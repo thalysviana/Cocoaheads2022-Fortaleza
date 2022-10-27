@@ -16,7 +16,7 @@ struct CharacterListView: View {
                 if viewModel.characters.isEmpty {
                     ProgressView()
                 } else {
-                    ForEach(viewModel.characters) { character in
+                    ForEach(viewModel.characters, id: \.imageURL) { character in
                         HStack(spacing: 16) {
                             NavigationLink {
                                 CharacterDetails(viewModel: character)

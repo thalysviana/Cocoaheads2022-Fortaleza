@@ -4,6 +4,7 @@ sources:
 templates:
   - ./Templates/AutoMockable.stencil
   - ./Templates/AutoFixturable.stencil
+  - ./Templates/AutoEquatable.stencil
 output:
   path: HPSampleTests/Sourcery
   link:

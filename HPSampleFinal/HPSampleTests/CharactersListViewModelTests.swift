@@ -15,11 +15,18 @@ final class CharactersListViewModelTests: XCTestCase {
         // TODO: - Create spy to inject into the ViewModel using Sourcery
         
         // Given
-        // let sut = CharacterListViewModel()
+        let serviceSpy = HPServiceProtocolSpy()
+        serviceSpy.stubbedFetchCharactersResult = [.fixture()]
+        let expectedResult = [CharacterViewModel(character: .fixture())]
+        let sut = CharacterListViewModel(hpService: serviceSpy)
         
         // When
+        await sut.fetchCharacters()
         
         // Then
+        XCTAssertTrue(serviceSpy.invokedFetchCharacters)
+        XCTAssertEqual(serviceSpy.invokedFetchCharactersCount, 1)
+        XCTAssertEqual(sut.characters, expectedResult)
     }
 }
 
