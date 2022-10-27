@@ -6,3 +6,19 @@
 //
 
 import Foundation
+import XCTest
+
+@testable import HPSample
+
+final class CharactersListViewModelTests: XCTestCase {
+    func testFetchCharacters_WhenServiveResponseDidSucceed() {
+        // TODO: - Create spy to inject into the ViewModel
+        
+        // Given
+        // let sut = CharacterListViewModel()
+        
+        // When
+        
+        // Then
+    }
+}
