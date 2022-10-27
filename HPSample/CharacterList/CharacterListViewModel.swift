@@ -30,8 +30,7 @@ final class CharacterListViewModel: ObservableObject, CharacterListViewModelProt
         characters = await hpService
             .fetchCharacters()
             .compactMap {
-                guard let imageURL = URL(string: $0.image) else { return nil }
-                return CharacterViewModel(id: $0.id, name: $0.name, imageURL: imageURL)
+                $0.image.isEmpty ? nil : .init(character: $0) 
             }
     }
 }

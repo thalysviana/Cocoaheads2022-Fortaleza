@@ -18,7 +18,11 @@ struct CharacterListView: View {
                 } else {
                     ForEach(viewModel.characters) { character in
                         HStack(spacing: 16) {
-                            CharacterItem(viewModel: character)
+                            NavigationLink {
+                                CharacterDetails(viewModel: character)
+                            } label: {
+                                Text(character.name)
+                            }
                         }
                     }
                 }

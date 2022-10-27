@@ -20,7 +20,7 @@
 		77426E95290A5A72009BC0CA /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E94290A5A72009BC0CA /* Character.swift */; };
 		77426E97290A5B3D009BC0CA /* HPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E96290A5B3D009BC0CA /* HPService.swift */; };
 		77426E99290A648B009BC0CA /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E98290A648B009BC0CA /* CharacterViewModel.swift */; };
-		77426E9B290A6711009BC0CA /* CharacterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E9A290A6711009BC0CA /* CharacterItem.swift */; };
+		77426E9E290A68BC009BC0CA /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77426E9D290A68BC009BC0CA /* CharacterDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 		77426E94290A5A72009BC0CA /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		77426E96290A5B3D009BC0CA /* HPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPService.swift; sourceTree = "<group>"; };
 		77426E98290A648B009BC0CA /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
-		77426E9A290A6711009BC0CA /* CharacterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterItem.swift; sourceTree = "<group>"; };
+		77426E9D290A68BC009BC0CA /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +108,7 @@
 		77426E60290A59D8009BC0CA /* HPSample */ = {
 			isa = PBXGroup;
 			children = (
+				77426E9C290A68A9009BC0CA /* CharacterDetails */,
 				77426E93290A5A64009BC0CA /* Models */,
 				77426E8E290A5A2E009BC0CA /* CharacterList */,
 				77426E8B290A59EA009BC0CA /* Network */,
@@ -158,8 +159,6 @@
 				77426E8F290A5A42009BC0CA /* CharacterListView.swift */,
 				77426E91290A5A53009BC0CA /* CharacterListViewModel.swift */,
 				77426E96290A5B3D009BC0CA /* HPService.swift */,
-				77426E98290A648B009BC0CA /* CharacterViewModel.swift */,
-				77426E9A290A6711009BC0CA /* CharacterItem.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -170,6 +169,15 @@
 				77426E94290A5A72009BC0CA /* Character.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		77426E9C290A68A9009BC0CA /* CharacterDetails */ = {
+			isa = PBXGroup;
+			children = (
+				77426E9D290A68BC009BC0CA /* CharacterDetails.swift */,
+				77426E98290A648B009BC0CA /* CharacterViewModel.swift */,
+			);
+			path = CharacterDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +316,7 @@
 				77426E90290A5A42009BC0CA /* CharacterListView.swift in Sources */,
 				77426E99290A648B009BC0CA /* CharacterViewModel.swift in Sources */,
 				77426E95290A5A72009BC0CA /* Character.swift in Sources */,
-				77426E9B290A6711009BC0CA /* CharacterItem.swift in Sources */,
+				77426E9E290A68BC009BC0CA /* CharacterDetails.swift in Sources */,
 				77426E92290A5A53009BC0CA /* CharacterListViewModel.swift in Sources */,
 				77426E62290A59D8009BC0CA /* HPSampleApp.swift in Sources */,
 			);
