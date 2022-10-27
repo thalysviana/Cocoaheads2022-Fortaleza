@@ -19,6 +19,8 @@ brew install sourcery
 ```
 > You can also use any of the other [installation methods](https://github.com/krzysztofzablocki/Sourcery#installation) described in the Sourcery repo
 
+In the root folder of either of the two projects (Starter or final) run ```sourcery```. This will trigger the code gen to the corresponding annotations
+
 ## More info ℹ
 This repo has two projects. One called **_HPSampleStarter_** and another one called **_HPSampleFinal_**. They are pretty much the same, the only difference is that
 the first one is not yet finished. Just in case you want to play with it and try yourself some Sourcery 🧙‍♂️. The latter is the finalized version of it. Feel free
