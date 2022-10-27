@@ -20,7 +20,7 @@ final class CharacterListViewModel: ObservableObject, CharacterListViewModelProt
     private let hpService: HPServiceProtocol
     
     // MARK: - Init
-    init(hpService: HPServiceProtocol = HPService()) {
+    init(hpService: HPServiceProtocol) {
         self.hpService = hpService
     }
     

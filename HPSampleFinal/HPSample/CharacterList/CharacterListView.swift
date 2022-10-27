@@ -39,6 +39,6 @@ struct CharacterListView: View {
 
 struct CharacterListView_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterListView(viewModel: .init())
+        CharacterListView(viewModel: .init(hpService: HPService()))
     }
 }

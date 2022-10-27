@@ -11,7 +11,7 @@ import SwiftUI
 struct HPSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            CharacterListView(viewModel: .init())
+            CharacterListView(viewModel: .init(hpService: HPService()))
         }
     }
 }
